@@ -1,5 +1,4 @@
 #!/bin/bash
-rm -f shots.csv
 touch shots.csv 
 while read yyy
 do

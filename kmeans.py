@@ -31,10 +31,7 @@ pred = KMeans(n_clusters=10).fit_predict(shot_array)
 for [pr, pl] in zip(pred, shot_df['player']):
     base.append([pr, pl])
 
-print(base)
-
 base.sort(key=lambda x:(x[0], x[1]))
-print(base)
 
 with open('result.csv', 'w') as f:
     writer = csv.writer(f, lineterminator = '\n')
